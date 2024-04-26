@@ -1,0 +1,1112 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');   
+
+@keyframes updown {
+    0%{
+        transform: translateY(-20px);
+    }
+
+    50%{
+        transform: translateY(20px);
+    }
+
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes on {
+    0%{
+        background: none;
+        border-radius: 10px;
+    }
+
+    50%{
+        background: var(--firstcolor);
+        box-shadow: 0 8px 32px 0 var(--fifthcolor);
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid var(--forthcolor);
+    }
+
+    100%{
+        background: none;
+        border-radius: 10px;
+    }
+}
+
+:root{
+    --firstcolor: white;
+    --secondcolor: #118EBF;
+    --tirthcolor: black;
+    --forthcolor: rgba(0, 0, 0, .2);
+    --fifthcolor: rgba( 31, 38, 135, 0.37 );
+}
+
+.dark-mode{
+    --firstcolor: #3F3F40;
+    --secondcolor: #BFBFBF;
+    --tirthcolor: #A6A6A6;
+    --forthcolor: black;
+    --fifthcolor: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color: var(--tirthcolor);
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    background-color: var(--firstcolor);
+}
+
+.cabecalho{
+    display: flex;
+    margin: -20px 0 100px 0;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+a{
+    font-size: 17px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.toggle-icon-2{
+    position: fixed;
+
+    margin: 30px 0 0 520px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px var(--forthcolor);
+    font-size: 25px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#home{
+    color: var(--firstcolor);
+    border: 1px solid var(--secondcolor);
+    border-radius: 20px;
+    padding: 6px 15px;
+    background: var(--secondcolor);
+    transition: 1s;
+}
+
+#home:hover{
+    color: black;
+
+    background: var(--firstcolor);
+    box-shadow: 0 8px 32px 0 var(--fifthcolor);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid var(--forthcolor);
+}
+
+.corpo{
+    display: flex;
+    flex-direction: row;
+    margin: 140px 0 0 0;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .socialmedia i{
+    margin: 15px 0 0 -130px;
+    font-size: 27px;
+    color: var(--secondcolor);
+    transition: 1s;
+}
+
+header .socialmedia i:hover{
+    padding: 10px;
+
+    color: var(--tirthcolor);
+
+    background: var(--firstcolor);
+    box-shadow: 0 8px 32px 0 var(--fifthcolor);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid var(--forthcolor);
+}
+
+.aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.name{
+    font-size: 70px;
+}
+
+.work{
+    margin-top: 0px;
+    font-size: 30px;
+    color: var(--tirthcolor);
+}
+
+.textabout{
+    margin-top: 12px;
+    font-size: 20px;
+    color: var(--tirthcolor);
+}
+
+.contact{
+    margin: 20px 0 0 -5px;
+    font-size: 20px;
+    color: var(--firstcolor);
+    border: 1px solid var(--secondcolor);
+    border-radius: 5px;
+    padding: 9px 15px;
+    background: var(--secondcolor);
+    transition: 1s;
+}
+
+.contact:hover{
+    color: black;
+
+    background: var(--firstcolor);
+    box-shadow: 0 8px 32px 0 var(--fifthcolor);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid var(--forthcolor);
+}
+
+header img{
+    position: relative;
+    margin: -170px 0 0 270px;
+    width: 210px;
+    border-radius: 120px;
+
+    animation: updown 5s linear infinite backwards;
+}
+
+.contexto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contexto .titletwo{
+    font-size: 90px;
+    margin-bottom: 90px;
+} 
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    position: relative;
+    
+}
+
+.primeiro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100px;
+    width: 450px;
+    gap: 7px;
+
+    border-radius: 5px;
+    background: var(--firstcolor);
+    box-shadow: 0 8px 32px 0 var(--fifthcolor);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid var(--forthcolor);
+
+    transition: 1s;
+}
+
+.primeiro:hover{
+    height: 130px;
+    width: 480px;
+}
+
+.primeiro h1{
+    font-size: 25px;
+}
+
+.segundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100px;
+    width: 450px;
+    gap: 7px;
+
+    border-radius: 5px;
+    background: var(--firstcolor);
+    box-shadow: 0 8px 32px 0 var(--fifthcolor);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid var(--forthcolor);
+
+    transition: 1s;
+}
+
+.segundo:hover{
+    height: 130px;
+    width: 480px;
+}
+
+.segundo h1{
+    font-size: 25px;   
+}
+
+.terceiro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 40px;
+    height: 100px;
+    width: 450px;
+    gap: 7px;
+
+    border-radius: 5px;
+    background: var(--firstcolor);
+    box-shadow: 0 8px 32px 0 var(--fifthcolor);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid var(--forthcolor);
+
+    transition: 1s;
+}
+
+.terceiro:hover{
+    height: 130px;
+    width: 480px;
+}
+
+.terceiro h1{
+    font-size: 25px;
+}
+
+.infor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 350px;
+}
+
+.infor h1{
+    font-size: 50px;
+}
+
+.infor h2{
+    font-size: 20px;
+} 
+
+.infor p{
+
+}
+
+.timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 150px;
+    padding: 0 0 30px 0;
+    gap: 30px;
+}
+
+/* FIRST CARD */
+
+.timeline .infoone{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 220px;
+    padding: 50px 20px;
+    border-radius: 5px;
+
+    border: 1px solid gray;
+
+    animation: on 8s infinite linear backwards;
+}
+
+.timeline .infoone h1{
+    font-size: 25px;
+}
+
+.timeline .infoone h5{
+    font-size: 20px;
+}
+
+.timeline .infoone p{
+    font-size: 15px;
+}
+
+/* SECOND CARD */
+
+.timeline .infotwo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 220px;
+    padding: 88px 20px;
+    border-radius: 5px;
+
+    border: 1px solid gray;  
+    
+    animation: on 8s infinite linear backwards;
+}
+
+.timeline .infotwo h1{
+    font-size: 25px;
+}
+
+.timeline .infotwo h5{
+    font-size: 20px;
+}
+
+.timeline .infotwo p{
+    font-size: 15px;
+}
+
+/* TIRTH CARD */
+
+.timeline .infothree{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 220px;
+    padding: 70px 20px;
+    border-radius: 5px;
+
+    border: 1px solid gray;  
+    
+    animation: on 8s infinite linear backwards;
+}
+
+.timeline .infothree h1{
+    font-size: 25px;
+}
+
+.timeline .infothree h5{
+    font-size: 20px;
+}
+
+.timeline .infothree p{
+    font-size: 15px;
+}
+
+/* FORTH CARD */
+
+.timeline .infofour{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 220px;
+    padding: 50px 20px;
+    border-radius: 5px;
+    border: 1px solid gray;  
+
+    animation: on 8s infinite linear backwards;
+}
+
+.timeline .infofour h1{
+    font-size: 25px;
+}
+
+.timeline .infofour h5{
+    font-size: 20px;
+}
+
+.timeline .infofour p{
+    font-size: 15px;
+}
+
+.contexto .titlethree{
+    font-size: 90px;
+    margin: 90px 0 50px 0;
+}
+
+  main i{
+    font-size: 20px;
+    color: var(--firstcolor);
+  }
+
+main h6{
+    margin: -90px 0 40px 50px;
+}
+
+ 
+.wrapper { 
+    max-width: 1100px; 
+    width: 100%; 
+    position: relative; 
+  
+} 
+  
+.wrapper i { 
+    height: 50px; 
+    width: 50px; 
+    background: rgb(118, 233, 118); 
+    text-align: center; 
+    line-height: 50px; 
+    border-radius: 50%; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; 
+    font-size: 1.25 rem; 
+    transform: translateY(-50%); 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23); 
+  
+} 
+  
+.wrapper i:first-child { 
+    left: -22px; 
+} 
+  
+.wrapper i:last-child { 
+    right: -22px; 
+} 
+  
+.wrapper .carousel { 
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-auto-columns: calc((100% / 3) - 12px); 
+    gap: 16px; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth; 
+    scrollbar-width: 0; 
+} 
+  
+.carousel::-webkit-scrollbar { 
+    display: none; 
+} 
+  
+.carousel :where(.card, .img) { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+} 
+  
+.carousel.dragging { 
+    scroll-snap-type: none; 
+    scroll-behavior: auto; 
+} 
+  
+.carousel.no-transition { 
+    scroll-behavior: auto; 
+} 
+  
+.carousel.dragging .card { 
+    cursor: grab; 
+    user-select: none; 
+} 
+  
+.carousel .card { 
+    scroll-snap-align: start; 
+    height: 340px; 
+    list-style: none; 
+    background: var(--firstcolor); 
+    border-radius: 8px; 
+    display: flex; 
+    cursor: pointer; 
+    width: 98%; 
+    padding-bottom: 15px; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+} 
+  
+.card .img { 
+    background: green; 
+    width: 145px; 
+    height: 145px; 
+    border-radius: 50%; 
+  
+} 
+  
+.card .img img { 
+    width: 140px; 
+    height: 140px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 4px solid var(--firstcolor); 
+} 
+  
+.card h2 { 
+    font-weight: 500; 
+    font-size: 1.56rem; 
+    margin: 30px 0 5px; 
+} 
+  
+.card span { 
+    color: #6a6d78; 
+    font-size: 1.31rem; 
+  
+} 
+  
+@media screen and (max-width: 900px) { 
+    .wrapper .carousel { 
+        grid-auto-columns: calc((100% / 2) - 9px); 
+    } 
+
+    .wrapper{
+        max-width: 250px;
+    }
+
+    .wrapper i{
+        display: none;   
+    }
+
+    .wrapper i:first-child { 
+        left: 0px; 
+      
+    } 
+      
+    .wrapper i:last-child { 
+        right: 0px; 
+      
+    } 
+} 
+  
+@media screen and (max-width: 600px) { 
+    .wrapper .carousel { 
+        grid-auto-columns: 100%;
+    } 
+
+    .wrapper{
+        max-width: 250px;
+    }
+
+    .wrapper i{
+        display: none;
+    }
+
+    .wrapper i:first-child { 
+        left: 0px;   
+    } 
+      
+    .wrapper i:last-child { 
+        right: 0px; 
+    } 
+}
+
+@media (max-width: 800px) {
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+    @keyframes updown {
+        0%{
+            transform: translateY(-20px);
+        }
+    
+        50%{
+            transform: translateY(20px);
+        }
+    
+        100%{
+            transform: translateY(-20px);
+        }
+    }
+    
+    @keyframes on {
+    0%{
+        background: none;
+        border-radius: 10px;
+    }
+
+    50%{
+        background: var(--firstcolor);
+        box-shadow: 0 8px 32px 0 var(--fifthcolor);
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid var(--forthcolor);
+    }
+
+    100%{
+        background: none;
+        border-radius: 10px;
+    }
+}   
+
+    :root{
+        --firstcolor: white;
+        --secondcolor: #118EBF;
+        --tirthcolor: black;
+        --forthcolor: rgba(0, 0, 0, .2);
+        --fifthcolor: rgba( 31, 38, 135, 0.37 );
+    }
+
+    .dark-mode{
+        --firstcolor: #3F3F40;
+        --secondcolor: #BFBFBF;
+        --tirthcolor: #A6A6A6;
+        --forthcolor: black;
+        --fifthcolor: black;
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        font-family: 'Rubik', sans-serif;
+        font-size: 20px;
+        color: var(--tirthcolor);
+        font-weight: 600;
+    }
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: var(--firstcolor);
+    }
+
+    .cabecalho{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0 80px 0;
+        flex-direction: column;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        margin: 20px 0 0 0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .ancoras a{
+        margin-left: 10px;
+        font-size: 20px;
+      
+    }
+
+    .toggle-icon-2{
+        display: flex;
+        margin: 20px 0 0 170px;
+    }
+
+    #home{
+        color: var(--firstcolor);
+        border: 1px solid var(--secondcolor);
+        border-radius: 20px;
+        padding: 6px 15px;
+        background: var(--secondcolor);
+        transition: 1s;
+    }
+
+    .corpo{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: 120px 0 0 0;
+    }
+
+    .socialmedia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 10px 0 0 160px;
+    }
+
+    header .socialmedia i{
+        font-size: 40px;
+        color: var(--secondcolor);
+        cursor: pointer;
+    }
+
+    .aboutme{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        max-width: 330px;
+    }
+
+    .name{
+        margin: 20px 0 0 0;
+        font-size: 60px;
+    }
+
+    .work{
+        margin-top: 3px;
+        font-size: 28px;
+        color: #A6A6A6;
+    }
+
+    .textabout{
+        margin-top: 18px;
+        font-size: 22px;
+        color: #A6A6A6;
+    }
+
+    .contact{
+        margin: 25px 0 0 -5px;
+        font-size: 27px;
+        color: var(--firstcolor);
+        border: 1px solid var(--secondcolor);
+        border-radius: 5px;
+        padding: 9px 16px;
+        background: var(--secondcolor);   
+    }
+
+    header img{
+        display: none;
+    }
+
+    .contexto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+    }
+
+    .contexto .titletwo{
+        font-size: 56px;
+        margin-bottom: 50px;
+    } 
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 90px;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+
+        margin: 0 0 0 20px;
+    }
+
+    .primeiro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        height: 100px;
+        width: 420px;
+        gap: 7px;
+
+        border-radius: 5px;
+        background: var(--firstcolor);
+        box-shadow: 0 8px 32px 0 var(--fifthcolor);
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid var(--forthcolor);
+
+        transition: 1s;
+    }
+
+    .primeiro:hover{
+        height: 130px;
+        width: 480px;
+    }
+
+    .primeiro h1{
+        font-size: 25px;
+    }
+
+    .segundo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        height: 100px;
+        width: 420px;
+        gap: 7px;
+
+        border-radius: 5px;
+        background: var(--firstcolor);
+        box-shadow: 0 8px 32px 0 var(--fifthcolor);
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid var(--forthcolor);
+
+        transition: 1s;
+    }
+
+    .segundo:hover{
+        height: 130px;
+        width: 480px;
+    }
+
+    .segundo h1{
+        font-size: 25px;   
+    }
+
+    .terceiro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        font-size: 40px;
+        height: 100px;
+        width: 420px;
+        gap: 7px;
+
+        border-radius: 5px;
+        background: var(--firstcolor);
+        box-shadow: 0 8px 32px 0 var(--fifthcolor);
+        backdrop-filter: blur( 20px );
+        -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+        border: 1px solid var(--forthcolor);
+
+        transition: 1s;
+    }
+
+    .terceiro:hover{
+        height: 130px;
+        width: 480px;
+    }
+
+    .terceiro h1{
+        font-size: 25px;
+    }
+
+    .infor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        max-width: 350px;
+    }
+
+    .infor h1{
+        font-size: 45px;
+    }
+
+    .infor h2{
+        font-size: 20px;
+    } 
+
+    .timeline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 150px;
+        gap: 30px;
+    }
+
+    /* FIRST CARD */
+
+    .infoone{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+
+        max-width: 220px;
+        padding: 80px 50px;
+        border-radius: 5px;
+
+        border: 1px solid gray;
+
+        animation: on 8s infinite linear backwards;
+    }
+
+    .timeline .infoone h1{
+        font-size: 25px;
+    }
+
+    .timeline .infoone h5{
+        font-size: 20px;
+    }
+
+    .timeline .infoone p{
+        font-size: 15px;
+    }
+
+    /* SECOND CARD */
+
+    .infotwo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+
+        max-width: 220px;
+        padding: 88px 20px;
+        border-radius: 5px;
+
+        border: 1px solid gray;   
+
+        animation: on 8s infinite linear backwards;
+    }
+
+    .timeline .infotwo h1{
+        font-size: 25px;
+    }
+
+    .timeline .infotwo h5{
+        font-size: 20px;
+    }
+
+    .timeline .infotwo p{
+        font-size: 15px;
+    }
+
+    /* TIRTH CARD */
+
+    .infothree{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+
+        max-width: 220px;
+        padding: 70px 20px;
+        border-radius: 5px;
+
+        border: 1px solid gray;    
+
+        animation: on 8s infinite linear backwards;
+    }
+
+    .timeline .infothree h1{
+        font-size: 25px;
+    }
+
+    .timeline .infothree h5{
+        font-size: 20px;
+    }
+
+    .timeline .infothree p{
+        font-size: 15px;
+    }
+
+    /* FORTH CARD */
+
+    .infofour{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+      
+        padding: 50px 80px;
+        border-radius: 5px;
+        border: 1px solid gray;
+
+        animation: on 8s infinite linear backwards;
+    }
+
+    .timeline .infofour h1{
+        font-size: 25px;
+    }
+
+    .timeline .infofour h5{
+        font-size: 20px;
+    }
+
+    .timeline .infofour p{
+        font-size: 15px;
+    }
+
+    .contexto .titlethree{
+        font-size: 90px;
+        margin: 90px 0 50px 0;
+    }
+
+    main h6{
+        margin: -90px 0 40px 30px;
+    }
+}
